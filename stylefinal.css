@@ -1,4 +1,107 @@
+/* regles generales */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
 img {
   width: 50px;
   height: 50px;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:hover {
+  color: pink;
+}
+
+/* taille temporaire pour la construction du site */
+/* header */
+
+.flexheader {
+  display: flex;
+  justify-content: space-between;
+  color: #554149;
+}
+
+header a {
+  color: #554149;
+}
+
+/* body */
+
+#welcome {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+div iframe {
+}
+
+#introduction {
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#introduction p {
+  text-align: right;
+}
+
+iframe {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+/* --- */
+#presentation {
+  text-align: right;
+}
+
+#platforms {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #c3d7b998;
+}
+
+.grid-container {
+  border: 2px pink solid;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  padding: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.grid-item {
+  border-radius: 9px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid #392727;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.grid-item img {
+  padding: 8px;
+}
+
+.grid-item:hover {
+  background-color: #f3d9e3be;
 }
