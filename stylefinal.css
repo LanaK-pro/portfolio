@@ -1,7 +1,11 @@
+/* VERSION DESKTOP */
+
 /* regles generales */
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at center, #f3d9e3 0%, #e5fbda 150%);
 }
 
 ul,
@@ -40,16 +44,14 @@ header a {
 /* body */
 
 #welcome {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-div iframe {
+  display: flex;
+  align-items: flex-start;
 }
 
 #introduction {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -60,6 +62,11 @@ div iframe {
 iframe {
   grid-column: 2/4;
   grid-row: 2/3;
+}
+
+.instagram-media {
+  grid-column: 3;
+  grid-row: 2;
 }
 
 /* --- */
@@ -76,32 +83,97 @@ iframe {
 }
 
 .grid-container {
-  border: 2px pink solid;
-  border-radius: 5px;
+  border: 2px #d2d2d2 solid;
+  border-radius: 9px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   padding: 30px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 170px;
+  margin-right: 170px;
+  background: linear-gradient(to bottom, #f3d9e3b7 0%, #e5fbda 200%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .grid-item {
-  border-radius: 9px;
+  border-radius: 15px;
   display: grid;
   align-items: center;
   justify-items: center;
-  border: 1px solid #392727;
+  border: 1px solid #bcadad;
   padding: 10px;
   text-align: center;
   transition: all 0.5s ease-in-out;
 }
 
 .grid-item img {
-  padding: 8px;
+  padding: 9px;
+  opacity: 90%;
 }
 
 .grid-item:hover {
-  background-color: #f3d9e3be;
+  background-color: #e5fbdaae;
+}
+
+/* footer */
+
+footer {
+  margin-top: 50px;
+  display: flex;
+  padding: 50px;
+  border: 1px #d2d2d2 solid;
+  border-radius: 9px;
+  background: linear-gradient(to bottom, #e5fbdacc -50%, #f3d9e3b7 100%);
+}
+
+/* VERSION MOBILE  */
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 23px;
+    background: radial-gradient(ellipse at 50% 20%, #f3d9e3 0%, #e5fbda 160%);
+  }
+
+  /* ---- */
+  .icone {
+    font-size: 20px;
+  }
+
+  .flexheader a {
+    font-size: 30px;
+    background-color: pink;
+    border-radius: 10px;
+  }
+
+  #platforms {
+    margin-bottom: 100px;
+    margin-top: 0px;
+    padding: 30px 0 30px 0;
+    text-align: left;
+  }
+
+  #platforms a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+  }
+  #technologies h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 20px;
+    padding-inline-start: 0px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .grid-item {
+    background-color: pink;
+  }
 }
