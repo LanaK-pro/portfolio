@@ -3,8 +3,8 @@
 /* regles generales */
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  font-family: Raleway;
   background: radial-gradient(circle at center, #f3d9e3 0%, #e5fbda 150%);
 }
 
@@ -22,20 +22,29 @@ img {
 a {
   text-decoration: none;
   color: aliceblue;
+  transition: all 0.5s ease-in-out;
 }
 
 a:hover {
-  color: pink;
-  transition: all 0.5s ease-in-out;
+  text-shadow: 0 5px 15px rgb(196, 161, 197);
 }
 
 /* taille temporaire pour la construction du site */
 /* header */
 
+header {
+  font-family: Chakra Petch;
+  font-size: 18px;
+  border: 1px #d2d2d2 solid;
+  border-radius: 9px;
+  background: linear-gradient(to top, #e5fbdacc -100%, #f3d9e3b7 200%);
+}
+
 .flexheader {
   display: flex;
   justify-content: space-between;
   color: #554149;
+  margin: 2px 8px;
 }
 
 header a {
@@ -44,16 +53,45 @@ header a {
 
 /* body */
 
+#presentation {
+  text-align: right;
+  font-size: 20px;
+}
+
 #welcome {
   display: flex;
   align-items: flex-start;
+  margin: 30px 20px 100px 20px;
+  border: 1px #d2d2d2 solid;
+  border-radius: 9px;
+  padding: 30px;
+  transition: all 0.5s ease-in-out;
+}
+/* resoud le problème du shadow sur le bloc instagram */
+.instagram-media {
+  box-shadow: 0 5px 15px rgb(255, 255, 255) !important ;
 }
 
 #introduction {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 4px;
+  margin: 10px;
+}
+
+.whoami {
+  display: flex;
+  border: 1px #d2d2d2 solid;
+  border-radius: 10px;
+  align-items: baseline;
+  padding: 5px 20px;
+  background-color: #e5fbdaae;
+  transition: all 0.5s ease-in-out;
+}
+
+.whoami:hover {
+  box-shadow: 0 5px 15px rgb(255, 255, 255);
 }
 
 #introduction p {
@@ -71,8 +109,14 @@ iframe {
 }
 
 /* --- */
-#presentation {
-  text-align: right;
+
+#technologies h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #554149;
+  border: 1px #e5fbda7b solid;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 #platforms {
@@ -126,6 +170,13 @@ footer {
   border: 1px #d2d2d2 solid;
   border-radius: 9px;
   background: linear-gradient(to bottom, #e5fbdacc -50%, #f3d9e3b7 100%);
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a {
+  color: #554149;
+  font-size: 18px;
 }
 
 /* VERSION MOBILE  */
