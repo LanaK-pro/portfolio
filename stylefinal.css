@@ -56,6 +56,7 @@ header a {
 #presentation {
   text-align: right;
   font-size: 20px;
+  margin: 60px;
 }
 
 #welcome {
@@ -69,7 +70,7 @@ header a {
 }
 /* resoud le problème du shadow sur le bloc instagram */
 .instagram-media {
-  box-shadow: 0 5px 15px rgb(255, 255, 255) !important ;
+  box-shadow: 0 5px 15px rgb(251, 223, 243) !important ;
 }
 
 #introduction {
@@ -117,6 +118,8 @@ iframe {
   border: 1px #e5fbda7b solid;
   border-radius: 10px;
   padding: 10px;
+  margin-top: 80px;
+  margin-bottom: 70px;
 }
 
 #platforms {
@@ -166,7 +169,7 @@ iframe {
 footer {
   margin-top: 50px;
   display: flex;
-  padding: 50px;
+  padding: 40px;
   border: 1px #d2d2d2 solid;
   border-radius: 9px;
   background: linear-gradient(to bottom, #e5fbdacc -50%, #f3d9e3b7 100%);
