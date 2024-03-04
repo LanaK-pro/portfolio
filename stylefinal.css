@@ -64,6 +64,11 @@ header a {
   text-align: right;
   font-size: 20px;
   margin: 60px;
+  transition: all 0.5s ease-in-out;
+}
+
+#presentation:hover {
+  font-size: 22px;
 }
 
 #welcome {
@@ -81,7 +86,12 @@ header a {
 }
 /* resoud le problème du shadow sur le bloc instagram */
 .instagram-media {
-  box-shadow: 0 5px 15px rgb(251, 223, 243) !important ;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.instagram-media:hover {
+  box-shadow: rgba(255, 255, 255, 0.447) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.39) 0px 30px 60px -30px !important;
 }
 
 #introduction {
@@ -120,6 +130,18 @@ header a {
 .internship:hover {
   font-size: 18px;
   text-shadow: none;
+}
+
+.news {
+  transition: all 0.5s ease-out;
+  padding: 10px;
+  border: 1px #d2d2d2 solid;
+  border-radius: 10px;
+  background-color: #e5fbdaae;
+}
+
+.news:hover {
+  box-shadow: 0 5px 15px rgb(255, 255, 255);
 }
 
 iframe {
@@ -202,13 +224,14 @@ iframe {
 .qualities div {
   border: 1px #bcadad dashed;
   padding: 20px;
-  border-radius: 30px;
+  border-radius: 60px;
   transition: all 0.5s ease-in-out;
 }
 
 .qualities div:hover {
-  background-color: #f3d9e3b7;
+  background-color: #ffffff;
   box-shadow: 0 5px 15px rgb(255, 255, 255);
+  border: 1px #f3d9e3 solid;
 }
 
 /* footer */
