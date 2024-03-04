@@ -1,5 +1,7 @@
 /* VERSION DESKTOP */
 
+/* ajoute un text align left pour hover sur la presentation */
+
 /* regles generales */
 
 body {
@@ -29,6 +31,10 @@ a:hover {
   text-shadow: 0 5px 15px rgb(196, 161, 197);
 }
 
+p {
+  text-justify: auto;
+}
+
 /* taille temporaire pour la construction du site */
 /* header */
 
@@ -38,6 +44,7 @@ header {
   border: 1px #d2d2d2 solid;
   border-radius: 9px;
   background: linear-gradient(to top, #e5fbdacc -100%, #f3d9e3b7 200%);
+  font-weight: 500;
 }
 
 .flexheader {
@@ -68,6 +75,10 @@ header a {
   padding: 30px;
   transition: all 0.5s ease-in-out;
 }
+
+#welcome:hover {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.625);
+}
 /* resoud le problème du shadow sur le bloc instagram */
 .instagram-media {
   box-shadow: 0 5px 15px rgb(251, 223, 243) !important ;
@@ -97,6 +108,18 @@ header a {
 
 #introduction p {
   text-align: right;
+}
+
+.internship {
+  font-weight: bold;
+  color: rgb(173, 24, 24);
+  text-shadow: 0 5px 15px rgba(222, 27, 27, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+
+.internship:hover {
+  font-size: 18px;
+  text-shadow: none;
 }
 
 iframe {
@@ -142,6 +165,11 @@ iframe {
   margin-right: 170px;
   background: linear-gradient(to bottom, #f3d9e3b7 0%, #e5fbda 200%);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.grid-container:hover {
+  box-shadow: 0 5px 15px rgb(255, 255, 255);
 }
 
 .grid-item {
@@ -162,6 +190,25 @@ iframe {
 
 .grid-item:hover {
   background-color: #e5fbdaae;
+}
+
+.qualities {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px;
+  font-size: 30px;
+}
+
+.qualities div {
+  border: 1px #bcadad dashed;
+  padding: 20px;
+  border-radius: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.qualities div:hover {
+  background-color: #f3d9e3b7;
+  box-shadow: 0 5px 15px rgb(255, 255, 255);
 }
 
 /* footer */
