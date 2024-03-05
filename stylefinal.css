@@ -1,7 +1,5 @@
 /* VERSION DESKTOP */
 
-/* ajoute un text align left pour hover sur la presentation */
-
 /* regles generales */
 
 body {
@@ -60,11 +58,26 @@ header a {
 
 /* body */
 
+/* regler le soucis d'animation */
+
 #presentation {
   text-align: right;
   font-size: 20px;
   margin: 60px;
   transition: all 0.5s ease-in-out;
+  animation: ombre-texte 2s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+@keyframes ombre-texte {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.684);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(198, 198, 198, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.385);
+  }
 }
 
 #presentation:hover {
@@ -110,24 +123,21 @@ header a {
   padding: 5px 20px;
   background-color: #e5fbdaae;
   transition: all 0.5s ease-in-out;
+  text-align: right;
 }
 
 .whoami:hover {
   box-shadow: 0 5px 15px rgb(255, 255, 255);
 }
 
-#introduction p {
-  text-align: right;
-}
-
-.internship {
+.internship a {
   font-weight: bold;
   color: rgb(173, 24, 24);
   text-shadow: 0 5px 15px rgba(222, 27, 27, 0.5);
   transition: all 0.5s ease-in-out;
 }
 
-.internship:hover {
+.internship a:hover {
   font-size: 18px;
   text-shadow: none;
 }
@@ -138,6 +148,7 @@ header a {
   border: 1px #d2d2d2 solid;
   border-radius: 10px;
   background-color: #e5fbdaae;
+  text-align: left;
 }
 
 .news:hover {
@@ -147,6 +158,12 @@ header a {
 iframe {
   grid-column: 2/4;
   grid-row: 2/3;
+  transition: all 0.5s ease-in-out;
+}
+
+iframe:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .instagram-media {
@@ -217,7 +234,7 @@ iframe {
 .qualities {
   display: flex;
   justify-content: space-evenly;
-  margin: 100px;
+  margin: 120px;
   font-size: 30px;
 }
 
