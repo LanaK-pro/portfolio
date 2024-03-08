@@ -1,6 +1,9 @@
 /* VERSION DESKTOP */
 
 /* regles generales */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0px;
